@@ -40,9 +40,7 @@ public class MainPresenter implements MainContract.Presenter, LocationService.On
 
   @Override
   public void onViewCreated() {
-    mView.initLocationPermissionExplanation();
-    mLocationService.addOnLocationChangedListener(this);
-    requestLocationPermissionStatus();
+    setupLocationPermissionConfig();
 
     mView.initSearchInputListener();
     mView.initVenueListRecyclerView();
@@ -157,10 +155,12 @@ public class MainPresenter implements MainContract.Presenter, LocationService.On
     }
   }
 
-  private void requestLocationPermissionStatus() {
+  private void setupLocationPermissionConfig() {
     if (mView.isLocationPermissionGranted()) {
+      mLocationService.addOnLocationChangedListener(this);
       updateCurrentLocation();
     } else {
+      mView.initLocationPermissionExplanation();
       mView.requestLocationPermission();
     }
   }

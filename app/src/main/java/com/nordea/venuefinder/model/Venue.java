@@ -31,12 +31,12 @@ public class Venue {
     return address != null ? address : "Unknown address";
   }
 
-  private static String formatDistance(float distanceInMeters) {
+  private static String formatDistance(double distanceInMeters) {
     if (distanceInMeters < 1000) {
       return new BigDecimal(distanceInMeters).setScale(0, BigDecimal.ROUND_HALF_UP).toString() + " m";
     }
 
-    float distanceInKilometer = distanceInMeters / 1000;
+    double distanceInKilometer = distanceInMeters / 1000;
     return new BigDecimal(distanceInKilometer).setScale(1, BigDecimal.ROUND_HALF_UP).toString() + " km";
   }
 }
