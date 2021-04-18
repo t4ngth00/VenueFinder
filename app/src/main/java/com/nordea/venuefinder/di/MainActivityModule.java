@@ -2,7 +2,7 @@ package com.nordea.venuefinder.di;
 
 import android.app.Activity;
 
-import com.nordea.venuefinder.MainActivity;
+import com.nordea.venuefinder.view.MainActivity;
 
 import dagger.Module;
 import dagger.Provides;

@@ -1,6 +1,6 @@
 package com.nordea.venuefinder.di;
 
-import com.nordea.venuefinder.MainActivity;
+import com.nordea.venuefinder.view.MainActivity;
 import com.nordea.venuefinder.contract.MainContract;
 import com.nordea.venuefinder.model.MainModel;
 import com.nordea.venuefinder.presenter.MainPresenter;

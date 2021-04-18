@@ -10,7 +10,7 @@
     <string name="no_result_logo">No result logo</string>
     <string name="error_logo">Error logo</string>
     <string name="something_went_wrong">Something went wrong</string>
-    <string name="current_location_error">Cannot get your current location, please try again later</string>
+    <string name="current_location_error">Cannot get current location. Please try again later</string>
     <string name="location_request_explanation">Local venues cannot be searched without the location permission</string>
     <string name="settings">Settings</string>
 </resources>

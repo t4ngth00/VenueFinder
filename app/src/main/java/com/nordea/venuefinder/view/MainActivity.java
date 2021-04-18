@@ -1,4 +1,4 @@
-package com.nordea.venuefinder;
+package com.nordea.venuefinder.view;
 
 import android.Manifest;
 import android.content.Intent;
@@ -21,11 +21,11 @@ import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
 import com.jakewharton.rxbinding4.InitialValueObservable;
 import com.jakewharton.rxbinding4.widget.RxTextView;
+import com.nordea.venuefinder.R;
 import com.nordea.venuefinder.adapter.VenueListRecyclerAdapter;
 import com.nordea.venuefinder.contract.MainContract;
 import com.nordea.venuefinder.databinding.ActivityMainBinding;
 import com.nordea.venuefinder.model.Venue;
-import com.nordea.venuefinder.view.MainViewState;
 import com.nordea.venuefinder.view.state.ActiveView;
 
 import java.util.List;
