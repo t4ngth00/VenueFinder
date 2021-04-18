@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color_primary_100">#FFF4FCD9</color>
+    <color name="color_primary_200">#FFE7F9B5</color>
+    <color name="color_primary_300">#FFCFEC8C</color>
+    <color name="color_primary_400">#FFB5DB6A</color>
+    <color name="color_primary_500">#FF91C33E</color>
+    <color name="color_primary_600">#FF74A72D</color>
+    <color name="color_primary_700">#FF5A8C1F</color>
+    <color name="color_primary_800">#FF437113</color>
+    <color name="color_primary_900">#FF325D0B</color>
+
+    <color name="color_secondary_100">#FFFFFADD</color>
+    <color name="color_secondary_200">#FFFFF5BB</color>
+    <color name="color_secondary_300">#FFFFED99</color>
+    <color name="color_secondary_400">#FFFFE680</color>
+    <color name="color_secondary_500">#FFFFDB56</color>
+    <color name="color_secondary_600">#FFDBB63E</color>
+    <color name="color_secondary_700">#FFB7932B</color>
+    <color name="color_secondary_800">#FF93721B</color>
+    <color name="color_secondary_900">#FF7A5A10</color>
+
+    <color name="color_basic_100">#FFFFFF</color>
+    <color name="color_basic_200">#F6F6F6</color>
+    <color name="color_basic_300">#EDEDED</color>
+    <color name="color_basic_400">#E4E4E4</color>
+    <color name="color_basic_500">#DBDBDB</color>
+    <color name="color_basic_600">#808080</color>
+    <color name="color_basic_700">#2E2E2E</color>
+    <color name="color_basic_800">#242424</color>
+    <color name="color_basic_900">#1B1B1B</color>
+    <color name="color_basic_1000">#121212</color>
+    <color name="color_basic_1100">#090909</color>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Venues Finder</string>
+    <string name="background_image">Background image</string>
+    <string name="venue_search_input_placeholder">Type a venue</string>
+    <string name="search_icon">Search icon</string>
+    <string name="venue_image_placeholder">Venue image placeholder</string>
+    <string name="venue_list_no_result">No result found!</string>
+    <string name="explore_local_venues">Explore local venues!</string>
+    <string name="main_logo">Main logo</string>
+    <string name="no_result_logo">No result logo</string>
+    <string name="error_logo">Error logo</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="location_request_explanation">Local venues cannot be searched without the location permission</string>
+    <string name="settings">Settings</string>
+</resources>
