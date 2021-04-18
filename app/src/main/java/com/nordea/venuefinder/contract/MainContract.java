@@ -1,5 +1,7 @@
 package com.nordea.venuefinder.contract;
 
+import androidx.annotation.StringRes;
+
 import com.jakewharton.rxbinding4.InitialValueObservable;
 import com.nordea.venuefinder.model.Venue;
 import com.nordea.venuefinder.view.state.ActiveView;
@@ -43,7 +45,7 @@ public interface MainContract {
 
     void renderNoResultView();
 
-    void renderErrorView();
+    void renderErrorView(@StringRes int resId);
 
     void renderContentView();
   }

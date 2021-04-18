@@ -9,6 +9,7 @@ import android.provider.Settings;
 import android.view.View;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -190,13 +191,14 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
   }
 
   @Override
-  public void renderErrorView() {
+  public void renderErrorView(@StringRes int resId) {
     mBinding.loadingView.loadingIndicator.setVisibility(View.GONE);
     mBinding.noResultView.getRoot().setVisibility(View.GONE);
     mBinding.initialView.getRoot().setVisibility(View.GONE);
     mBinding.venueList.venueRecyclerView.setVisibility(View.GONE);
 
     mBinding.errorView.getRoot().setVisibility(View.VISIBLE);
+    mBinding.errorView.errorMessage.setText(getString(resId));
   }
 
   @Override

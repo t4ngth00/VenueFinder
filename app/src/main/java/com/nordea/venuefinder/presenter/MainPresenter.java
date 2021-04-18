@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.jakewharton.rxbinding4.InitialValueObservable;
+import com.nordea.venuefinder.R;
 import com.nordea.venuefinder.contract.MainContract;
 import com.nordea.venuefinder.model.Venue;
 import com.nordea.venuefinder.service.LocationService;
@@ -62,7 +63,7 @@ public class MainPresenter implements MainContract.Presenter, LocationService.On
         mView.renderNoResultView();
         break;
       case ERROR:
-        mView.renderErrorView();
+        mView.renderErrorView(R.string.something_went_wrong);
         break;
       case CONTENT:
       default:
@@ -113,7 +114,7 @@ public class MainPresenter implements MainContract.Presenter, LocationService.On
       .observeOn(AndroidSchedulers.mainThread())
       .doOnError(throwable -> {
         mActiveView = ActiveView.ERROR;
-        mView.renderErrorView();
+        mView.renderErrorView(R.string.something_went_wrong);
       })
       .retry()
       .subscribe(pair -> {
@@ -144,7 +145,13 @@ public class MainPresenter implements MainContract.Presenter, LocationService.On
   public void updateCurrentLocation() {
     if (mView.isLocationPermissionGranted()) {
       Location lastLocation = mLocationService.getLastLocation();
-      String formattedLocation = String.valueOf(lastLocation.getLatitude()) + ',' + lastLocation.getLongitude();
+
+      String formattedLocation = null;
+      if (lastLocation != null) {
+        formattedLocation = String.valueOf(lastLocation.getLatitude()) + ',' + lastLocation.getLongitude();
+      } else {
+        mView.renderErrorView(R.string.current_location_error);
+      }
 
       mModel.setFormattedLocation(formattedLocation);
     }
