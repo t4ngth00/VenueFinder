@@ -19,7 +19,7 @@ public class VenueListModule {
 
   @Singleton
   @Provides
-  public static VenueListRecyclerAdapter provideVenueRecyclerAdapter(
+  public static VenueListRecyclerAdapter provideVenueListRecyclerAdapter(
     VenueListContract.Presenter presenter
   ) {
     return new VenueListRecyclerAdapter(presenter);
